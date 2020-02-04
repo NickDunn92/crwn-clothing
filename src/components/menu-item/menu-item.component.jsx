@@ -2,8 +2,7 @@ import React from 'react';
 
 /*
   withRouter is a higher-order component. A higher-order component is essentially a function that takes a component as an argument
-  and returns a modified component. It will take the MenuItem component and give it back as higher-order component which will give it access to the
-  match, location and history properties. 
+  and returns a modified component. This higher-order component which will give it access to the match, location and history properties. 
 */
 import { withRouter } from 'react-router-dom';
 
