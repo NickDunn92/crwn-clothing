@@ -14,8 +14,8 @@ class Directory extends Component {
   render() {
     return (
       <div className='directory-menu'>
-        {this.state.ClothingItems.map(({id, ...ClothingItems}) => (
-          <MenuItem key={id} {...ClothingItems} />
+        {this.state.ClothingItems.map(({id, ...otherClothingItems}) => (
+          <MenuItem key={id} {...otherClothingItems} />
         ))}
       </div>
     );
