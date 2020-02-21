@@ -1,3 +1,5 @@
+import { UserActionTypes } from './user.types'; 
+ 
 /*
   The user reducer is the reducer that stores the current state of user.
   A reducer is a function that gets 2 properties:
@@ -20,7 +22,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
 
     // 2. If the case of that action type ('SET_CURRENT_USER') is one we want, then we will render something.
-    case 'SET_CURRENT_USER':
+    case UserActionTypes.SET_CURRENT_USER:
 
       /*
         If our case is the action type that is fired, we return a new object which represents the new state the user reducer
