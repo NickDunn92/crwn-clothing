@@ -61,7 +61,7 @@ class App extends Component {
 
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser
-})
+});
 
 /*
   mapDispatchToProps is a function which gets the dispatch property and returns an object.
