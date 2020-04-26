@@ -6,7 +6,9 @@
 // We import our user reducer into the the root reducer and we combine all of the reducers by importing combineReducer.
 import { combineReducers } from 'redux';
 import userReducer from './user/user.reducer';
+import cartReducer from './cart/cart.reducer';
 
 export default combineReducers({
-  user: userReducer
+  user: userReducer,
+  cart: cartReducer
 });

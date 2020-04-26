@@ -7,7 +7,7 @@ import './header.styles.scss';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser, hidden }) => (
   <div className='header'>
     <Link className='logo-container' to="/">
       <Logo className='logo' />
@@ -30,7 +30,7 @@ const Header = ({ currentUser }) => (
       )}
       <CartIcon />
     </div>
-    <CartDropdown />
+    {hidden ? null : <CartDropdown />}
   </div>
 )
 
@@ -39,8 +39,9 @@ const Header = ({ currentUser }) => (
   We get the state object which is the top-level rootReducer, we pass in the currentUser property and the value will be state.user.currentUser
   We now have the null value being passed in as the currentUser value.
 */
-const mapStateToProps = state => ({
-  currentUser: state.user.currentUser
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+  currentUser,
+  hidden
 })
 
 /*
