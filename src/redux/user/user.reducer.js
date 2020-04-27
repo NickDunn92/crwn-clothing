@@ -16,7 +16,7 @@ const INITIAL_STATE = {
 }
 
 // The state is something that the redux store is going to pass to the reducer whenever the action fires.
-const userReducer = (state = INITIAL_STATE, action) => {
+const UserReducer = (state = INITIAL_STATE, action) => {
 
   // 1. Based on the action.type value,
   switch (action.type) {
@@ -43,4 +43,4 @@ const userReducer = (state = INITIAL_STATE, action) => {
   }
 }
 
-export default userReducer;
+export default UserReducer;
