@@ -7,7 +7,7 @@ import { UserActionTypes } from './user.types';
     .Action
   
   An action is an object that has a type (string value) which describes what specific action it is.
-  It also has a payload which is a flexible value that can be anything. 
+  It can also have a payload which is a flexible value that can be anything. 
 */
 
 // This is an object that represents the initial state of the reducer.
